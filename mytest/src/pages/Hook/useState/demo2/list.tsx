@@ -1,0 +1,21 @@
+interface Typeprops {
+  id: number
+  name: string
+  description: string
+}
+const List = (props: { items: Typeprops[] }) => {
+  return (
+    <table>
+      <tbody>
+        {props.items.map((food: Typeprops) => (
+          <tr key={food.id}>
+            <td>{food.name}</td>
+            <td>{food.description}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}
+
+export default List

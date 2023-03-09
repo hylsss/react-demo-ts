@@ -1,10 +1,12 @@
 import React from "react"
 import "./App.css"
-import Test from "./components/test/index"
-import Classcomponent from "./components/classcomponent/index"
-import Home from "./pages/home/index"
+// import Test from "./components/test/index"
+// import Classcomponent from "./components/classcomponent/index"
+// import Home from "./pages/home/index"
 import TestUseContext from "./pages/Hook/useContext"
 import UseReducerTest from "./pages/Hook/useReducer/index"
+import UsestateTest from "./pages/Hook/useState/demo1"
+import DemoState from "./pages/Hook/useState/demo2"
 
 export interface itemState {
   name: string
@@ -42,6 +44,8 @@ function App() {
     </div> */}
       <TestUseContext />
       <UseReducerTest />
+      <UsestateTest />
+      <DemoState />
     </div>
   )
 }
