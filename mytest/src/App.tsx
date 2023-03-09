@@ -5,6 +5,7 @@ import "./App.css"
 // import Home from "./pages/home/index"
 import TestUseContext from "./pages/Hook/useContext"
 import UseReducerTest from "./pages/Hook/useReducer/index"
+import Reducerdemo from "./pages/Hook/useReducer/reducerdemo"
 import UsestateTest from "./pages/Hook/useState/demo1"
 import DemoState from "./pages/Hook/useState/demo2"
 
@@ -46,6 +47,7 @@ function App() {
       <UseReducerTest />
       <UsestateTest />
       <DemoState />
+      <Reducerdemo />
     </div>
   )
 }
