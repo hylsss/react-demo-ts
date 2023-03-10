@@ -1,31 +1,38 @@
+import { type } from "os"
 import { useReducer } from "react"
 
 interface ParamsType {
+  name: string
+  age: string
+  sex: string
+}
+interface FormType {
   name?: string
   age?: string
   sex?: string
 }
+const initData: ParamsType = {
+  name: "",
+  age: "",
+  sex: "",
+}
 
 const dealAction = (
   state: any,
-  action: { formData: ParamsType; type: string }
+  action: { type: string; formData: FormType }
 ) => {
   switch (action.type) {
     case "change":
       console.log({ ...state, ...action.formData })
-      return { ...state, ...action.formData }
 
+      return { ...state, ...action.formData }
     case "reset":
       return { name: "", age: "", sex: "" }
   }
 }
 
 const Reducerdemo = () => {
-  const [state, dispatch] = useReducer(dealAction, {
-    name: "",
-    age: "",
-    sex: "",
-  })
+  const [state, dispatch] = useReducer(dealAction, initData)
   return (
     <div>
       <div>

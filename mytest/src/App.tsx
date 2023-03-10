@@ -4,6 +4,7 @@ import "./App.css"
 // import Classcomponent from "./components/classcomponent/index"
 // import Home from "./pages/home/index"
 import TestUseContext from "./pages/Hook/useContext"
+import UseMemoTest from "./pages/Hook/useMemo"
 import UseReducerTest from "./pages/Hook/useReducer/index"
 import Reducerdemo from "./pages/Hook/useReducer/reducerdemo"
 import UsestateTest from "./pages/Hook/useState/demo1"
@@ -43,11 +44,12 @@ function App() {
       <h1>组件之间的props传值</h1>
       <Home list={list}/>
     </div> */}
-      <TestUseContext />
+      {/* <TestUseContext />
       <UseReducerTest />
       <UsestateTest />
       <DemoState />
-      <Reducerdemo />
+      <Reducerdemo /> */}
+      <UseMemoTest />
     </div>
   )
 }
