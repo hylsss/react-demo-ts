@@ -5,7 +5,7 @@ import Child2 from "./child2"
 const UseMemoTest = () => {
   const [n, setN] = useState(0)
   const [m, setM] = useState(10)
-  console.log("执行最外层盒子了")
+  // console.log("执行最外层盒子了")
   return (
     <>
       <div>

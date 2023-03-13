@@ -3,12 +3,15 @@ import "./App.css"
 // import Test from "./components/test/index"
 // import Classcomponent from "./components/classcomponent/index"
 // import Home from "./pages/home/index"
-import TestUseContext from "./pages/Hook/useContext"
+// import TestUseContext from "./pages/Hook/useContext"
 import UseMemoTest from "./pages/Hook/useMemo"
-import UseReducerTest from "./pages/Hook/useReducer/index"
-import Reducerdemo from "./pages/Hook/useReducer/reducerdemo"
-import UsestateTest from "./pages/Hook/useState/demo1"
-import DemoState from "./pages/Hook/useState/demo2"
+import MemoTest from "./pages/Hook/useMemo/MemoTest"
+import UseRefTest from "./pages/Hook/useRef/index"
+import TestUseRef from "./pages/Hook/useRef/useRefDemo"
+// import UseReducerTest from "./pages/Hook/useReducer/index"
+// import Reducerdemo from "./pages/Hook/useReducer/reducerdemo"
+// import UsestateTest from "./pages/Hook/useState/demo1"
+// import DemoState from "./pages/Hook/useState/demo2"
 
 export interface itemState {
   name: string
@@ -50,6 +53,12 @@ function App() {
       <DemoState />
       <Reducerdemo /> */}
       <UseMemoTest />
+      <hr />
+      <UseRefTest />
+      <hr />
+      <TestUseRef />
+      <hr />
+      <MemoTest />
     </div>
   )
 }
