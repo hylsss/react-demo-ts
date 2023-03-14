@@ -53,14 +53,7 @@ function App() {
       <UsestateTest />
       <DemoState />
       <Reducerdemo /> */}
-      {/* <UseMemoTest />
-      <hr />
-      <UseRefTest />
-      <hr />
-      <TestUseRef />
-      <hr />
-      <MemoTest /> */}
-      <CallBackTest />
+      <UseMemoTest />
     </div>
   )
 }
