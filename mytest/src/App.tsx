@@ -1,5 +1,6 @@
 import React from "react"
 import "./App.css"
+import CallBackTest from "./pages/Hook/useCallback"
 // import Test from "./components/test/index"
 // import Classcomponent from "./components/classcomponent/index"
 // import Home from "./pages/home/index"
@@ -52,13 +53,14 @@ function App() {
       <UsestateTest />
       <DemoState />
       <Reducerdemo /> */}
-      <UseMemoTest />
+      {/* <UseMemoTest />
       <hr />
       <UseRefTest />
       <hr />
       <TestUseRef />
       <hr />
-      <MemoTest />
+      <MemoTest /> */}
+      <CallBackTest />
     </div>
   )
 }
