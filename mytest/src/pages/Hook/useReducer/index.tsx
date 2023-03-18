@@ -6,6 +6,7 @@ interface Actionstype {
 }
 
 const initialState = { count: 87 }
+
 const countReducer = (state: { count: number }, action: Actionstype) => {
   switch (action.type) {
     case "increment":

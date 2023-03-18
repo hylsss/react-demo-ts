@@ -6,9 +6,12 @@ import CallBackTest from "./pages/Hook/useCallback"
 // import Home from "./pages/home/index"
 // import TestUseContext from "./pages/Hook/useContext"
 import UseMemoTest from "./pages/Hook/useMemo"
-import MemoTest from "./pages/Hook/useMemo/MemoTest"
-import UseRefTest from "./pages/Hook/useRef/index"
-import TestUseRef from "./pages/Hook/useRef/useRefDemo"
+import Demo from "./pages/Hook/useReducer/reducerandcontext/demo"
+
+// import MemoTest from "./pages/Hook/useMemo/MemoTest"
+// import UseRefTest from "./pages/Hook/useRef/index"
+// import TestUseRef from "./pages/Hook/useRef/useRefDemo"
+import Game from "./pages/Hook/useState"
 // import UseReducerTest from "./pages/Hook/useReducer/index"
 // import Reducerdemo from "./pages/Hook/useReducer/reducerdemo"
 // import UsestateTest from "./pages/Hook/useState/demo1"
@@ -32,11 +35,13 @@ export interface itemState {
 function App() {
   return (
     <div className="App">
+      <Demo />
+      {/* <UseReducerDemo /> */}
       {/* <div>
       <h1>函数组件点击更新</h1>
       <Test />
       </div>
-    
+  
 
      <div>
        <h1>类组件点击更新</h1>
@@ -53,7 +58,8 @@ function App() {
       <UsestateTest />
       <DemoState />
       <Reducerdemo /> */}
-      <UseMemoTest />
+      {/* <Game />
+      <UseMemoTest /> */}
     </div>
   )
 }
